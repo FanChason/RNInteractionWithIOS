@@ -1,0 +1,3 @@
+rootProject.name = 'RNInteractionWithiOS'
+
+include ':app'

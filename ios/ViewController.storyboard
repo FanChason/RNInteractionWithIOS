@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="zYn-um-I9a">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="7Da-bw-9QV" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WfJ-bx-Ppx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前是原生页面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aU7-VJ-KMD">
+                                <rect key="frame" x="19" y="33" width="122" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIE-0B-oUK">
+                                <rect key="frame" x="16" y="62" width="128" height="30"/>
+                                <state key="normal" title="打开第一个RN页面"/>
+                                <connections>
+                                    <action selector="openRNOne" destination="7Da-bw-9QV" eventType="touchUpInside" id="8II-EI-xgQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmk-A7-n5q">
+                                <rect key="frame" x="16" y="100" width="128" height="30"/>
+                                <state key="normal" title="打开第二个RN页面"/>
+                                <connections>
+                                    <action selector="openRNTwo" destination="7Da-bw-9QV" eventType="touchUpInside" id="qHv-uh-ZvT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9a-hp-NfG">
+                                <rect key="frame" x="166" y="62" width="82" height="30"/>
+                                <state key="normal" title="关闭RN页面"/>
+                                <connections>
+                                    <action selector="removeRNPage" destination="7Da-bw-9QV" eventType="touchUpInside" id="m3x-Dr-3zA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8J-FZ-XR0">
+                                <rect key="frame" x="19" y="176" width="183" height="30"/>
+                                <state key="normal" title="iOS调用RN事件（并传值）"/>
+                                <connections>
+                                    <action selector="iOSTransferRNWithPatameter" destination="7Da-bw-9QV" eventType="touchUpInside" id="yIZ-Px-PDy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4DJ-09-TfM">
+                                <rect key="frame" x="19" y="138" width="106" height="30"/>
+                                <state key="normal" title="iOS调用RN事件"/>
+                                <connections>
+                                    <action selector="iOSTransferRNWithNoparameter" destination="7Da-bw-9QV" eventType="touchUpInside" id="GDf-Se-eno"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YIE-0B-oUK" firstAttribute="top" secondItem="aU7-VJ-KMD" secondAttribute="bottom" constant="8" id="350-W9-iUQ"/>
+                            <constraint firstItem="K9a-hp-NfG" firstAttribute="centerY" secondItem="YIE-0B-oUK" secondAttribute="centerY" id="5O5-bV-uI3"/>
+                            <constraint firstItem="X8J-FZ-XR0" firstAttribute="top" secondItem="4DJ-09-TfM" secondAttribute="bottom" constant="8" id="9Mh-WK-86S"/>
+                            <constraint firstItem="vmk-A7-n5q" firstAttribute="top" secondItem="YIE-0B-oUK" secondAttribute="bottom" constant="8" id="Arv-8S-l2j"/>
+                            <constraint firstItem="K9a-hp-NfG" firstAttribute="leading" secondItem="YIE-0B-oUK" secondAttribute="trailing" constant="22" id="JEr-pe-WJY"/>
+                            <constraint firstItem="4DJ-09-TfM" firstAttribute="top" secondItem="vmk-A7-n5q" secondAttribute="bottom" constant="8" id="PQb-bI-vZx"/>
+                            <constraint firstItem="aU7-VJ-KMD" firstAttribute="top" secondItem="m8N-nx-x08" secondAttribute="top" constant="13" id="Pbh-t9-MtM"/>
+                            <constraint firstItem="aU7-VJ-KMD" firstAttribute="leading" secondItem="m8N-nx-x08" secondAttribute="leading" constant="19" id="h6G-4E-olq"/>
+                            <constraint firstItem="X8J-FZ-XR0" firstAttribute="leading" secondItem="m8N-nx-x08" secondAttribute="leading" constant="19" id="oIX-6l-Pte"/>
+                            <constraint firstItem="YIE-0B-oUK" firstAttribute="leading" secondItem="m8N-nx-x08" secondAttribute="leading" constant="16" id="qkj-TI-Xe5"/>
+                            <constraint firstItem="4DJ-09-TfM" firstAttribute="leading" secondItem="m8N-nx-x08" secondAttribute="leading" constant="19" id="sg5-45-Vek"/>
+                            <constraint firstItem="vmk-A7-n5q" firstAttribute="leading" secondItem="m8N-nx-x08" secondAttribute="leading" constant="16" id="wTp-Ec-FcU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="m8N-nx-x08"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LNz-qn-DaZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44" y="178"/>
+        </scene>
+    </scenes>
+</document>

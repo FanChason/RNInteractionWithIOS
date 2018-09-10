@@ -1,0 +1,4 @@
+constructor	/Users/fanxc/RNInteractionWithiOS/App.js	/^  constructor(props) {$/;"	function	line:17
+state.notice	/Users/fanxc/RNInteractionWithiOS/App.js	/^    this.state = {$/;"	property	line:19
+componentWillMount	/Users/fanxc/RNInteractionWithiOS/App.js	/^  componentWillMount() {$/;"	function	line:24
+render	/Users/fanxc/RNInteractionWithiOS/App.js	/^  render() {$/;"	function	line:60
