@@ -9,7 +9,7 @@ ReactNative与IOS各种交互汇总
 于是自己看RN源码分析得出一些方法。
 如有问题欢迎指正，有更好的思路方法欢迎分享。
 
-#目录
+# 目录
 ```
 一、 iOS 调用ReactNative
 1，打开一个ReactNative页面
@@ -21,18 +21,18 @@ ReactNative与IOS各种交互汇总
 3，有回调
 4，有多个参数多个回调
 ```
-##说明：
-###1,Demo: **[RNInteractionWithIOS](https://github.com/xianChaoFan/RNInteractionWithIOS)**
+## 说明：
+### 1,Demo: **[RNInteractionWithIOS](https://github.com/xianChaoFan/RNInteractionWithIOS)**
 
 - demo截图：
 ![Simulator Screen Shot - iPhone X - 2018-09-10 at 18.20.26.png](https://upload-images.jianshu.io/upload_images/1432381-eb2b738a78e3dd01.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-###2,ReactNative版本：
+### 2,ReactNative版本：
     "react": "16.4.1",
     "react-native": "0.56.0"
 
 
-#一、 iOS 调用ReactNative
+# 一、 iOS 调用ReactNative
 ## 1,打开一个ReactNative页面
 
 比如react-native init RNInteractionWithiOS 创建一个应用之后就会自动在 `RNInteractionWithiOS->ios->RNInteractionWithiOS->AppDelegate.m`中生成打开一个ReactNative页面的代码。核心代码如下：
