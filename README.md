@@ -25,7 +25,7 @@ ReactNative与IOS各种交互汇总
 ### 1,Demo: **[RNInteractionWithIOS](https://github.com/xianChaoFan/RNInteractionWithIOS)**
 
 - demo截图：
-![Simulator Screen Shot - iPhone X - 2018-09-10 at 18.20.26.png](https://upload-images.jianshu.io/upload_images/1432381-eb2b738a78e3dd01.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Snip20190319_1.png](https://upload-images.jianshu.io/upload_images/1432381-6f3a8cf2cc09ca41.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 2,ReactNative版本：
     "react": "16.4.1",
